@@ -1,13 +1,14 @@
 <h1 align="center">
-  <br>
   MSDebouncer
-  <br>
 </h1>
 
 <h5 align="center">Simple debouncer to use in your iOS apps</h5>
 
 ## Demo
-![Demo video](https://raw.githubusercontent.com/moridaffy/MSDebouncer/main/demo.gif)
+<p align="center">
+<img src="https://raw.githubusercontent.com/moridaffy/MSDebouncer/main/demo.gif" alt="Demo video" width="300"/>
+</p>
+
 
 ## How to install?
 ### Manually
