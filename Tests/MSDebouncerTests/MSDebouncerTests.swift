@@ -7,7 +7,7 @@ final class MSDebouncerTests: XCTestCase {
     
     let expectation = XCTestExpectation(description: "Output value updated")
     
-    let debouncer = MSDebouncer(outputType: String.self) { latestValue in
+    let debouncer = Debouncer(outputType: String.self) { latestValue in
       outputValue = latestValue
       
       expectation.fulfill()

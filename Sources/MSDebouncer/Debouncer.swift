@@ -1,6 +1,6 @@
 import Foundation
 
-public class MSDebouncer<T> {
+public class Debouncer<T> {
   let outputType: T.Type
   
   var debounceTime: TimeInterval
