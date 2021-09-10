@@ -1,11 +1,23 @@
-    import XCTest
-    @testable import MSDebouncer
+import XCTest
+@testable import MSDebouncer
 
-    final class MSDebouncerTests: XCTestCase {
-        func testExample() {
-            // This is an example of a functional test case.
-            // Use XCTAssert and related functions to verify your tests produce the correct
-            // results.
-            XCTAssertEqual(MSDebouncer().text, "Hello, World!")
-        }
+final class MSDebouncerTests: XCTestCase {
+  func testDebounce() {
+    var outputValue: String?
+    
+    let expectation = XCTestExpectation(description: "Output value updated")
+    
+    let debouncer = MSDebouncer(outputType: String.self) { latestValue in
+      outputValue = latestValue
+      
+      expectation.fulfill()
     }
+    
+    debouncer.setValue("A")
+    debouncer.setValue("B")
+    debouncer.setValue("C")
+    
+    wait(for: [expectation], timeout: debouncer.debounceTime)
+    XCTAssertTrue(outputValue == "C")
+  }
+}

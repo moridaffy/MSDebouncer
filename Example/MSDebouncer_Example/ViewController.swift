@@ -1,11 +1,13 @@
 //
 //  ViewController.swift
-//  MSDebouncer
+//  MSDebouncer_Example
 //
-//  Created by Maxim Skryabin on 13.08.2021.
+//  Created by Maxim Skryabin on 10.09.2021.
 //
 
 import UIKit
+
+import MSDebouncer
 
 class ViewController: UIViewController {
   
