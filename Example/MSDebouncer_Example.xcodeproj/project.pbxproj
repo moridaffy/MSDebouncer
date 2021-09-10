@@ -337,8 +337,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/moridaffy/MSDebouncer";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				kind = revision;
+				revision = e1d110b7d32c845d535f54c3acda242ad175d56a;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
