@@ -11,7 +11,7 @@
 		0CAA298526EBC4460067752B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA298426EBC4460067752B /* ViewController.swift */; };
 		0CAA298A26EBC4470067752B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CAA298926EBC4470067752B /* Assets.xcassets */; };
 		0CAA298D26EBC4470067752B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CAA298B26EBC4470067752B /* LaunchScreen.storyboard */; };
-		0CAA299926EBC9200067752B /* MSDebouncer in Frameworks */ = {isa = PBXBuildFile; productRef = 0CAA299826EBC9200067752B /* MSDebouncer */; };
+		0CAA299F26EBCA330067752B /* MSDebouncer in Frameworks */ = {isa = PBXBuildFile; productRef = 0CAA299E26EBCA330067752B /* MSDebouncer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CAA299926EBC9200067752B /* MSDebouncer in Frameworks */,
+				0CAA299F26EBCA330067752B /* MSDebouncer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +80,7 @@
 			);
 			name = MSDebouncer_Example;
 			packageProductDependencies = (
-				0CAA299826EBC9200067752B /* MSDebouncer */,
+				0CAA299E26EBCA330067752B /* MSDebouncer */,
 			);
 			productName = MSDebouncer_Example;
 			productReference = 0CAA297D26EBC4460067752B /* MSDebouncer_Example.app */;
@@ -110,7 +110,7 @@
 			);
 			mainGroup = 0CAA297426EBC4460067752B;
 			packageReferences = (
-				0CAA299726EBC9200067752B /* XCRemoteSwiftPackageReference "MSDebouncer" */,
+				0CAA299D26EBCA330067752B /* XCRemoteSwiftPackageReference "MSDebouncer" */,
 			);
 			productRefGroup = 0CAA297E26EBC4460067752B /* Products */;
 			projectDirPath = "";
@@ -333,20 +333,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0CAA299726EBC9200067752B /* XCRemoteSwiftPackageReference "MSDebouncer" */ = {
+		0CAA299D26EBCA330067752B /* XCRemoteSwiftPackageReference "MSDebouncer" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/moridaffy/MSDebouncer";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0CAA299826EBC9200067752B /* MSDebouncer */ = {
+		0CAA299E26EBCA330067752B /* MSDebouncer */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0CAA299726EBC9200067752B /* XCRemoteSwiftPackageReference "MSDebouncer" */;
+			package = 0CAA299D26EBCA330067752B /* XCRemoteSwiftPackageReference "MSDebouncer" */;
 			productName = MSDebouncer;
 		};
 /* End XCSwiftPackageProductDependency section */

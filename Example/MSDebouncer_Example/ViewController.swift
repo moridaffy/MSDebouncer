@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     return button
   }
   
-  private var debouncer: MSDebouncer<String>?
+  private var debouncer: Debouncer<String>?
   
   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
     super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -83,7 +83,7 @@ class ViewController: UIViewController {
   }
   
   private func setupDebouncer() {
-    self.debouncer = MSDebouncer(outputType: String.self, callback: { [weak self] value in
+    self.debouncer = Debouncer(outputType: String.self, callback: { [weak self] value in
       self?.valueLabel.text = [
         value ?? "empty title button",
         "tapped"

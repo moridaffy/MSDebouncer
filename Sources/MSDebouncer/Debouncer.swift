@@ -1,22 +1,21 @@
 import Foundation
 
 public class Debouncer<T> {
-  let outputType: T.Type
+  private let outputType: T.Type
   
-  var debounceTime: TimeInterval
-  var callback: ((T?) -> Void)
+  public var debounceTime: TimeInterval
+  public var callback: ((T?) -> Void)
   
-  private(set) var timer: Timer?
-  
+  private var timer: Timer?
   private var latestValue: T?
   
-  init(outputType: T.Type, debounceTime: TimeInterval = 1.5, callback: @escaping ((T?) -> Void)) {
+  public init(outputType: T.Type, debounceTime: TimeInterval = 1.5, callback: @escaping ((T?) -> Void)) {
     self.outputType = outputType
     self.debounceTime = debounceTime
     self.callback = callback
   }
   
-  func setValue(_ value: T?) {
+  public func setValue(_ value: T?) {
     latestValue = value
     
     invalidateTimer()
